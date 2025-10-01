@@ -9,3 +9,5 @@
 ```shell
 docker-compose up --build -d
 ```
+
+**This requires that a door is setup as an in/out door in Verkada Command and configured for Anti-passback if you want violations flagged.**
