@@ -4,7 +4,7 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: backend-container
-    env_file: "~/Desktop/breakroom.env"
+    env_file: "breakroom.env"
     ports:
       - '3001:3001'
   react:
