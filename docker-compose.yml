@@ -1,0 +1,16 @@
+services:
+  node:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: backend-container
+    env_file: "~/Desktop/breakroom.env"
+    ports:
+      - '3001:3001'
+  react:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend-container
+    ports:
+      - '3000:3000'
